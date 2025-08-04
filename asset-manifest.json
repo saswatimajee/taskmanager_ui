@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/saswatimajee/taskmanager_ui.git/static/css/main.b00778b6.css",
-    "main.js": "/saswatimajee/taskmanager_ui.git/static/js/main.0792f7ef.js",
-    "static/js/453.40163a3c.chunk.js": "/saswatimajee/taskmanager_ui.git/static/js/453.40163a3c.chunk.js",
-    "index.html": "/saswatimajee/taskmanager_ui.git/index.html",
-    "main.b00778b6.css.map": "/saswatimajee/taskmanager_ui.git/static/css/main.b00778b6.css.map",
-    "main.0792f7ef.js.map": "/saswatimajee/taskmanager_ui.git/static/js/main.0792f7ef.js.map",
-    "453.40163a3c.chunk.js.map": "/saswatimajee/taskmanager_ui.git/static/js/453.40163a3c.chunk.js.map"
+    "main.css": "/taskmanager_ui/static/css/main.b00778b6.css",
+    "main.js": "/taskmanager_ui/static/js/main.57989794.js",
+    "static/js/453.40163a3c.chunk.js": "/taskmanager_ui/static/js/453.40163a3c.chunk.js",
+    "index.html": "/taskmanager_ui/index.html",
+    "main.b00778b6.css.map": "/taskmanager_ui/static/css/main.b00778b6.css.map",
+    "main.57989794.js.map": "/taskmanager_ui/static/js/main.57989794.js.map",
+    "453.40163a3c.chunk.js.map": "/taskmanager_ui/static/js/453.40163a3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b00778b6.css",
-    "static/js/main.0792f7ef.js"
+    "static/js/main.57989794.js"
   ]
 }
