@@ -1,0 +1,174 @@
+/* Base Reset */
+html, body, #root, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main app container */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+/* Light Theme */
+.light-mode {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+}
+
+/* Dark Theme */
+.dark-mode {
+  background-color: #0d0d0d; /* full black */
+  color: #f0f0f0;
+}
+
+/* Toggle Switch */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;  /* 👈 Add this line */
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Toggle switch UI */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffa500;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Task layout: form on left, task list on right */
+.task-layout {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+/* Task form block */
+.task-form-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+/* Task list block */
+.task-list-container {
+  flex: 0 0 250px;
+  margin-top: 1rem;
+}
+
+/* Responsive tweak (optional) */
+@media (max-width: 768px) {
+  .task-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .task-list-container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+html, body, #root, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent; /* just to be safe */
+}
+
+/* ✅ Force full black background for dark mode */
+.dark-mode {
+  background-color: #000 !important;
+  color: #f0f0f0;
+  min-height: 100vh; /* make sure it stretches fully */
+}
+
+body.dark-mode {
+  background-color: #000 !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.dark-mode {
+  background-color: #000 !important;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
